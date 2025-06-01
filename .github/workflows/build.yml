@@ -27,7 +27,35 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here
-          - recipe.yml
+          - recipe-aurora-dx-latest.yml
+          - recipe-aurora-dx-nvidia-latest.yml
+          - recipe-aurora-dx-nvidia-stable.yml
+          - recipe-aurora-dx-stable.yml
+          - recipe-aurora-latest.yml
+          - recipe-aurora-nvidia-latest.yml
+          - recipe-aurora-nvidia-stable.yml
+          - recipe-aurora-stable.yml
+          - recipe-bazzite-deck-gnome.yml
+          - recipe-bazzite-deck-nvidia-gnome.yml
+          - recipe-bazzite-deck-nvidia.yml
+          - recipe-bazzite-deck.yml
+          - recipe-bazzite-gnome-nvidia-open.yml
+          - recipe-bazzite-gnome.yml
+          - recipe-bazzite-nvidia-open.yml
+          - recipe-bazzite.yml
+          - recipe-bluefin-dx-gts.yml
+          - recipe-bluefin-dx-latest.yml
+          - recipe-bluefin-dx-nvidia-gts.yml
+          - recipe-bluefin-dx-nvidia-latest.yml
+          - recipe-bluefin-dx-nvidia-stable.yml
+          - recipe-bluefin-dx-stable.yml
+          - recipe-bluefin-gts.yml
+          - recipe-bluefin-latest.yml
+          - recipe-bluefin-nvidia-gts.yml
+          - recipe-bluefin-nvidia-latest.yml
+          - recipe-bluefin-nvidia-stable.yml
+          - recipe-bluefin-stable.yml
+
     steps:
       # the build is fully handled by the reusable github action
       - name: Build Custom Image
