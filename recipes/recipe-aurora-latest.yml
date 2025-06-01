@@ -1,0 +1,10 @@
+name: aurora-latest
+
+description: "latest of aurora"
+
+base-image: ghcr.io/ublue-os/aurora
+
+image-version: latest 
+
+modules:
+  - from-file: common/trivalent.yml

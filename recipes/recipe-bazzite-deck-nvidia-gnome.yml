@@ -1,0 +1,10 @@
+name: bazzite-deck-nvidia-gnome
+
+description: "Bazzite deck nvidia gnome"
+
+base-image: ghcr.io/ublue-os/bazzite-deck-nvidia-gnome
+
+image-version: stable 
+
+modules:
+  - from-file: common/trivalent.yml

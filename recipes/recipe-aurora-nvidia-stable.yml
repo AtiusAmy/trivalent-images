@@ -1,0 +1,10 @@
+name: aurora-nvidia-stable
+
+description: "Stable of aurora nvidia"
+
+base-image: ghcr.io/ublue-os/aurora-nvidia-open
+
+image-version: stable 
+
+modules:
+  - from-file: common/trivalent.yml

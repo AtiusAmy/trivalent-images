@@ -1,0 +1,10 @@
+name: bluefin-dx-nvidia-latest
+
+description: "latest of Bluefin-dx"
+
+base-image: ghcr.io/ublue-os/bluefin-dx-nvidia-open
+
+image-version: latest 
+
+modules:
+  - from-file: common/trivalent.yml

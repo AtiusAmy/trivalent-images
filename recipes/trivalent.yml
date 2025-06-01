@@ -1,0 +1,5 @@
+type: dnf
+repos: 
+  - https://repo.secureblue.dev/secureblue.repo
+install:
+  - trivalent

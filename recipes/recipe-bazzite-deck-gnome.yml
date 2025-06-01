@@ -1,0 +1,10 @@
+name: bazzite-deck-gnome
+
+description: "Bazzite deck GNOME"
+
+base-image: ghcr.io/ublue-os/bazzite-deck-gnome
+
+image-version: stable 
+
+modules:
+  - from-file: common/trivalent.yml

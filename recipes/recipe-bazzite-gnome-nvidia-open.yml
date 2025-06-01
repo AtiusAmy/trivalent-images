@@ -1,0 +1,10 @@
+name: bazzite-gnome-nvidia
+
+description: "Bazzite GNOME nvidia"
+
+base-image: ghcr.io/ublue-os/bazzite-gnome-nvidia-open
+
+image-version: stable 
+
+modules:
+  - from-file: common/trivalent.yml

@@ -1,0 +1,10 @@
+name: bluefin-gts
+
+description: "GTS of Bluefin"
+
+base-image: ghcr.io/ublue-os/bluefin
+
+image-version: gts 
+
+modules:
+  - from-file: common/trivalent.yml

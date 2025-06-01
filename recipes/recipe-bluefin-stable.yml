@@ -1,0 +1,10 @@
+name: bluefin-stable
+
+description: "Stable of Bluefin"
+
+base-image: ghcr.io/ublue-os/bluefin
+
+image-version: stable 
+
+modules:
+  - from-file: common/trivalent.yml

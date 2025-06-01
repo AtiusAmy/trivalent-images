@@ -1,0 +1,10 @@
+name: aurora-dx-stable
+
+description: "Stable of aurora-dx"
+
+base-image: ghcr.io/ublue-os/aurora-dx
+
+image-version: stable 
+
+modules:
+  - from-file: common/trivalent.yml
