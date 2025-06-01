@@ -1,4 +1,4 @@
-type: dnf
+type: rpm-ostree
 repos:
   - https://repo.secureblue.dev/secureblue.repo
 install:
