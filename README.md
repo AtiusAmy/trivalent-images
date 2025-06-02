@@ -4,11 +4,17 @@ This is basically a custom image of Aurora, Bluefin, and Bazzite that provides T
 
 We currently provide
 
-- [Bluefin(-dx)](https://projectbluefin.io/) (LTS,GDX,GTS,Stable,Latest)
+- [Bluefin(-dx)](https://projectbluefin.io/) (~~LTS,GDX~~,GTS,Stable,Latest) *LTS and GDX currently not working*
 - [Bazzite(-deck)](https://bazzite.gg/)
 - [Aurora(-dx)](https://getaurora.dev/) (Stable,latest)
 
 Aurora LTS will be added once it is ready, as well as [glacialis](https://github.com/glacialis-os/glacialis)
+
+## Rationale
+
+Flatpak Chromium browser currently doesn't work with the Chromium sandbox due to usernamespace limitations. It uses a hack called zypak that fakes part of the Chromium sandbox. Zypak is also maintained by a single person, which does not give confidence for the security issue. 
+
+So I ended up using Trivalent from [secureblue](https://secureblue.dev/) due to the fastness of upgrade and the hardening inspired by Vanadium. Using SELinux confinement to achieve some of the security benefits of sandboxed apps.
 
 ## Installation
 

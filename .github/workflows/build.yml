@@ -55,10 +55,10 @@ jobs:
           - recipe-bluefin-nvidia-latest.yml
           - recipe-bluefin-nvidia-stable.yml
           - recipe-bluefin-stable.yml
-          - recipe-bluefin-lts.yml
-          - recipe-bluefin-gdx.yml
-          - recipe-bluefin-lts-testing.yml
-          - recipe-bluefin-dx-lts.yml
+          #- recipe-bluefin-lts.yml
+          #- recipe-bluefin-gdx.yml
+          #- recipe-bluefin-lts-testing.yml
+          #- recipe-bluefin-dx-lts.yml
 
     steps:
       # the build is fully handled by the reusable github action
