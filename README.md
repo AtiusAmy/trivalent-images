@@ -1,5 +1,8 @@
 # trivalent-images &nbsp; [![bluebuild build badge](https://github.com/atiusamy/trivalent-images/actions/workflows/build.yml/badge.svg)](https://github.com/atiusamy/trivalent-images/actions/workflows/build.yml)
 
+This is basically a custom image of Aurora, Bluefin, and Bazzite that provides Trivalent alongside SELinux confinement
+
+
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 After setup, it is recommended you update this README to describe your custom image.
@@ -13,7 +16,10 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/atiusamy/trivalent-images:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/atiusamy/<image_name>:latest
+  ```
+  ```
+  bootc switch ghcr.io/atiusamy/<image_name>:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -21,7 +27,10 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/atiusamy/trivalent-images:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/atiusamy/<image_name>:latest
+  ```
+  ```
+  bootc switch --enforce-container-sigpolicy ghcr.io/atiusamy/<image_name>:latest
   ```
 - Reboot again to complete the installation
   ```
