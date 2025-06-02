@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
+echo "I'll fix this later"
+#echo "Building and Loading Policy"
 
-echo "Building and Loading Policy"
+#set -x
 
-set -x
+#make -f /usr/share/selinux/devel/Makefile trivalent.pp || exit
+#/usr/sbin/semodule -i trivalent.pp -v 
 
-make -f /usr/share/selinux/devel/Makefile trivalent.pp || exit
-/usr/sbin/semodule -i trivalent.pp -v 
-
-/sbin/restorecon -F -R -v /usr/lib/trivalent/
+#/sbin/restorecon -F -R -v /usr/lib/trivalent/
