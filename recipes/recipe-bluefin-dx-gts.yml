@@ -8,3 +8,4 @@ image-version: gts
 
 modules:
   - from-file: common/trivalent.yml
+  - from-file: common/selinux.yml

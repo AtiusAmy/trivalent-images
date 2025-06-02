@@ -3,6 +3,3 @@ repos:
   - https://repo.secureblue.dev/secureblue.repo
 install:
   - trivalent
-type: script
-scripts:
-  - selinux.sh

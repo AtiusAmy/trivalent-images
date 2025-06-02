@@ -8,3 +8,4 @@ image-version: latest
 
 modules:
   - from-file: common/trivalent.yml
+  - from-file: common/selinux.yml
