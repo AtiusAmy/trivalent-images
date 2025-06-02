@@ -1,5 +1,8 @@
-type: rpm-ostree
+type: dnf
 repos:
-  - https://repo.secureblue.dev/secureblue.repo
+  files:
+    - https://repo.secureblue.dev/secureblue.repo
 install:
-  - trivalent
+  packages:
+    - trivalent
+    - trivalent-subresource-filter
