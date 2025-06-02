@@ -18,9 +18,6 @@ bash "${PWD}/trivalent.sh"
 cd ../..
 echo "Cleaning up build package 'selinux-policy-devel' & it's dependencies"
 dnf5 -y remove selinux-policy-devel
-echo "Enabling Negativo repos (as default state)"
-dnf5 -y config-manager setopt fedora-cdrtools.enabled=1
-dnf5 -y config-manager setopt fedora-multimedia.enabled=1
 
 echo "Assure that network sandbox is always disabled by default (to ensure that login data remains)"
 echo "https://github.com/fedora-silverblue/issue-tracker/issues/603"
