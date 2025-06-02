@@ -1,0 +1,11 @@
+name: bluefin-gdx
+
+description: "LTS-testing of Bluefin"
+
+base-image: ghcr.io/ublue-os/bluefin-lts
+
+image-version: gdx
+
+modules:
+  - from-file: common/trivalent.yml
+  - from-file: common/selinux-lts.yml
