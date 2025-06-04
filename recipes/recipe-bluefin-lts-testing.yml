@@ -8,4 +8,4 @@ image-version: lts-ltesting
 
 modules:
   - from-file: common/trivalent-lts.yml
-  - from-file: common/selinux-lts.yml
+  #- from-file: common/selinux-lts.yml
