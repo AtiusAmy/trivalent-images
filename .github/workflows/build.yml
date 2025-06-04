@@ -57,7 +57,7 @@ jobs:
           - recipe-bluefin-stable.yml
           - recipe-bluefin-lts.yml
           - recipe-bluefin-gdx.yml
-          - recipe-bluefin-lts-testing.yml
+          #- recipe-bluefin-lts-testing.yml
           - recipe-bluefin-dx-lts.yml
 
     steps:

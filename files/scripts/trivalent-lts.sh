@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
-dnf -y --enablerepo https://repo.secureblue.dev/secureblue.repo --nogpgcheck  install trivalent
+dnf config-manager --add-repo "https://repo.secureblue.dev/secureblue.repo"
+dnf config-manager --set-disabled "secureblue"
+dnf -y --enablerepo "secureblue" --nogpgcheck  install trivalent
 
 

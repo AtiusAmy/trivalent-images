@@ -4,7 +4,7 @@ This is basically a custom image of Aurora, Bluefin, and Bazzite that provides T
 
 We currently provide
 
-- [Bluefin(-dx)](https://projectbluefin.io/) (~~LTS,GDX~~,GTS,Stable,Latest) *LTS and GDX currently not working*
+- [Bluefin(-dx)](https://projectbluefin.io/) (LTS,GDX,GTS,Stable,Latest)
 - [Bazzite(-deck)](https://bazzite.gg/)
 - [Aurora(-dx)](https://getaurora.dev/) (Stable,latest)
 
