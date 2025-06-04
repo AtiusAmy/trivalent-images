@@ -7,6 +7,5 @@ base-image: ghcr.io/ublue-os/bluefin
 image-version: lts-ltesting
 
 modules:
-  - from-file: common/gpgkeys.yml
-  - from-file: common/trivalent.yml
+  - from-file: common/trivalent-lts.yml
   - from-file: common/selinux-lts.yml
