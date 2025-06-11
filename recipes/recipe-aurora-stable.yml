@@ -4,7 +4,7 @@ description: "Stable of aurora"
 
 base-image: ghcr.io/ublue-os/aurora
 
-image-version: stable 
+image-version: stable-daily
 
 modules:
   - from-file: common/trivalent.yml

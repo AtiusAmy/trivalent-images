@@ -4,7 +4,7 @@ description: "Stable of aurora nvidia"
 
 base-image: ghcr.io/ublue-os/aurora-nvidia-open
 
-image-version: stable 
+image-version: stable-daily
 
 modules:
   - from-file: common/trivalent.yml
