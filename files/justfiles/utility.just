@@ -1,4 +1,3 @@
-
 # Apply SELinux type "user_home_t" on external drives to allow access from Trivalent
 label-external-drives:
     #!/usr/bin/bash
