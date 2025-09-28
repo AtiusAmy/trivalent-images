@@ -16,6 +16,8 @@
 
 set -euo pipefail
 
+rm /etc/yum.repos.d/terra*
+
 echo "Installing secureblue Trivalent selinux policy"
 echo "Install 'selinux-policy-devel' build package & it's dependencies"
 dnf5 -y install selinux-policy-devel
