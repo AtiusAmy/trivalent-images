@@ -9,4 +9,3 @@ image-version: stable-daily
 modules:
   - from-file: common/trivalent.yml
   - from-file: common/selinux.yml
-  - from-file: common/rocm.yml
