@@ -1,7 +1,11 @@
 type: dnf
 repos:
+  cleanup: true
   files:
     - https://repo.secureblue.dev/secureblue.repo
+  copr:
+    - secureblue/trivalent
 install:
   packages:
     - trivalent
+    - trivalent-subresource-filter
