@@ -6,6 +6,4 @@ modules:
       validate: true
       include:
          - utility.just
-    - type: files
-      destination: /
 
