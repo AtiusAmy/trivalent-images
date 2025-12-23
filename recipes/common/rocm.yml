@@ -1,6 +1,0 @@
-type: dnf
-install:
-  packages:
-    - rocm-hip
-    - rocm-opencl
-    - rocm-smi
