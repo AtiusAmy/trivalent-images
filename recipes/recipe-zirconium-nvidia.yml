@@ -1,0 +1,11 @@
+name: zirconium-nvidia-latest
+
+description: "latest of Zirconium nvidia"
+
+base-image: ghcr.io/zirconium-dev/zirconium-nvidia
+
+image-version: latest 
+
+modules:
+  - from-file: common/trivalent.yml
+  - from-file: common/selinux.yml

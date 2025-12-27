@@ -1,0 +1,11 @@
+name: zirconium-latest
+
+description: "latest of Zirconium"
+
+base-image: ghcr.io/zirconium-dev/zirconium
+
+image-version: latest 
+
+modules:
+  - from-file: common/trivalent.yml
+  - from-file: common/selinux.yml
