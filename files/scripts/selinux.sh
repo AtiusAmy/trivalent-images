@@ -16,7 +16,6 @@
 
 set -euo pipefail
 
-rm -fv /etc/yum.repos.d/terra*
 
 echo "Installing secureblue Trivalent selinux policy"
 echo "Disable Negativo repo, to prevent installing conflicting non-needed 'schily' package"
