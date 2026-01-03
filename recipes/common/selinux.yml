@@ -1,7 +1,7 @@
 modules:
-    - type: scripts
+    - type: script
       scripts:
-         - selinux.sh
+        - selinux.sh
     - type: justfiles
       validate: true
       include:
