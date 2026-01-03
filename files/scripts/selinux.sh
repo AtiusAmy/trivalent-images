@@ -3,9 +3,6 @@
 set -euo pipefail
 
 echo "Installing secureblue Trivalent selinux policy"
-echo "Disable Negativo repo, to prevent installing conflicting non-needed 'schily' package"
-dnf5 -y config-manager setopt fedora-cdrtools.enabled=0
-dnf5 -y config-manager setopt fedora-multimedia.enabled=0
 echo "Install 'selinux-policy-devel' build package & it's dependencies"
 dnf5 -y install selinux-policy-devel
 echo "Downloading secureblue Trivalent selinux policy"
@@ -23,8 +20,6 @@ bash "${PWD}/installselinuxpolicies.sh"
 echo "Cleaning up build package 'selinux-policy-devel' & it's dependencies"
 dnf5 -y remove selinux-policy-devel
 echo "Enabling Negativo repos (as default state)"
-dnf5 -y config-manager setopt fedora-cdrtools.enabled=1
-dnf5 -y config-manager setopt fedora-multimedia.enabled=1
 
 echo "Assure that network sandbox is always disabled by default (to ensure that login data remains)"
 echo "https://github.com/fedora-silverblue/issue-tracker/issues/603"
