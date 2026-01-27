@@ -1,6 +1,6 @@
-name: bluefin-stable
+name: bluefin-amy
 
-description: "Stable of Bluefin"
+description: "amy of Bluefin"
 
 base-image: ghcr.io/ublue-os/bluefin
 
