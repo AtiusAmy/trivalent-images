@@ -1,0 +1,39 @@
+name: bluefin-stable
+
+description: "Stable of Bluefin"
+
+base-image: ghcr.io/ublue-os/bluefin
+
+image-version: stable-daily
+
+modules:
+  - from-file: common/trivalent.yml
+  - from-file: common/selinux.yml
+  - type: dnf
+    repos:
+      cleanup: true
+      copr:
+        - secureblue/run0edit
+    install:
+      install-weak-deps: false
+      packages:
+        - run0edit
+        - osbuild-selinux
+        - hardinfo2
+        - gparted
+        - gnome-shell-extension-pop-shell
+        - gnome-shell-extension-background-logo
+        - rocm-hip
+        - rocm-opencl
+        - rocm-smi
+  - type: gnome-extensions
+    install:
+      - Control monitor brightness and volume with ddcutil # https://extensions.gnome.org/extension/6325/control-monitor-brightness-and-volume-with-ddcutil/
+      - Quick Settings Audio Devices Renamer # https://extensions.gnome.org/extension/6000/quick-settings-audio-devices-renamer/
+
+    uninstall:
+      - GSConnect # Uninstall step here should be used only for the extensions
+  - type: files
+    files:
+      - source: system/etc   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+        destination: /etc

@@ -1,4 +1,0 @@
-type: dnf
-install:
-  packages:
-    - osbuild-selinux

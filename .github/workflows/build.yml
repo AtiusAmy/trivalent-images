@@ -57,6 +57,7 @@ jobs:
           - recipe-bluefin-stable.yml
           - recipe-zirconium.yml
           - recipe-zirconium-nvidia.yml
+          - recipe-bluefin-amy.yml
           #- recipe-bluefin-lts.yml
           #- recipe-bluefin-gdx.yml
           #- recipe-bluefin-lts-testing.yml
