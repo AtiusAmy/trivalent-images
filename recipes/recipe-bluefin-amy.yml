@@ -26,6 +26,9 @@ modules:
         - rocm-hip
         - rocm-opencl
         - rocm-smi
+        - sysbench
+        - iperf3
+        - vulkan-tools
   - type: gnome-extensions
     install:
       - Control monitor brightness and volume with ddcutil # https://extensions.gnome.org/extension/6325/control-monitor-brightness-and-volume-with-ddcutil/
