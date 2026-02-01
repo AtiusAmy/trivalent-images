@@ -12,6 +12,8 @@ modules:
   - type: dnf
     repos:
       cleanup: true
+      files:
+        - https://packages.freedom.press/yum-tools-prod/dangerzone/dangerzone.repo
       copr:
         - secureblue/run0edit
     install:
@@ -19,6 +21,7 @@ modules:
       packages:
         - run0edit
         - osbuild-selinux
+        - dangerzone
         - hardinfo2
         - gparted
         - gnome-shell-extension-pop-shell
