@@ -4,7 +4,8 @@ repos:
   files:
     - https://repo.secureblue.dev/secureblue.repo
   copr:
-    - secureblue/trivalent
+    - name: secureblue/trivalent
+      chroot: fedora-43-x86_64
 install:
   packages:
     - trivalent
