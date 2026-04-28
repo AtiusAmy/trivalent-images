@@ -29,6 +29,7 @@ modules:
         - iperf3
         - vulkan-tools
         - sysbench
+        - gnome-tweaks
         - https://github.com/RedCommand/flatpak-alias/releases/download/v0.1.4/flatpak-alias_0.1.4_linux_amd64.rpm
   - type: gnome-extensions
     install:
