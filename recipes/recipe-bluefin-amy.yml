@@ -33,7 +33,6 @@ modules:
         - https://github.com/RedCommand/flatpak-alias/releases/download/v0.1.4/flatpak-alias_0.1.4_linux_amd64.rpm
   - type: gnome-extensions
     install:
-      - Control monitor brightness and volume with ddcutil # https://extensions.gnome.org/extension/6325/control-monitor-brightness-and-volume-with-ddcutil/
       - Quick Settings Audio Devices Renamer # https://extensions.gnome.org/extension/6000/quick-settings-audio-devices-renamer/
 
     uninstall:
