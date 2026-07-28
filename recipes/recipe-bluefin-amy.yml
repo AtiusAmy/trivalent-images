@@ -31,6 +31,7 @@ modules:
         - sysbench
         - gnome-tweaks
         - https://github.com/RedCommand/flatpak-alias/releases/download/v0.1.4/flatpak-alias_0.1.4_linux_amd64.rpm
+        - https://github.com/frostyard/chairlift/releases/download/v0.10.0/frostyard-chairlift-0.10.0-1.x86_64.rpm
   - type: gnome-extensions
     install:
       - Quick Settings Audio Devices Renamer # https://extensions.gnome.org/extension/6000/quick-settings-audio-devices-renamer/
