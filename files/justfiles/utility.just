@@ -2,7 +2,7 @@
 label-external-drives:
     #!/usr/bin/bash
     set -euo pipefail
-    media_path="/run/media/$USER/"
+    media_path="/var/mnt/"
     selabel="user_home_t"
     supported_fs=("ext2" "ext3" "ext4" "jfs" "xfs" "btrfs") # ref: https://wiki.gentoo.org/wiki/SELinux/FAQ#Can_I_use_SELinux_with_any_file_system.3F
 
