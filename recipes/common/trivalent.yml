@@ -1,12 +1,18 @@
-type: dnf
-repos:
-  cleanup: true
-  files:
-    - https://repo.secureblue.dev/secureblue.repo
-  copr:
-    - secureblue/trivalent
-install:
-  packages:
-    - trivalent
-    - trivalent-subresource-filter
-    - trivalent-selinux
+modules:
+    - type: justfiles
+      validate: true
+      include:
+         - utility.just
+         - utility2.just
+    - type: dnf
+      repos:
+        cleanup: true
+        files:
+          - https://repo.secureblue.dev/secureblue.repo
+        copr:
+          - secureblue/trivalent
+      install:
+        packages:
+          - trivalent
+          - trivalent-subresource-filter
+          - trivalent-selinux

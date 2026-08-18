@@ -42,6 +42,8 @@ modules:
     files:
       - source: system/etc   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
         destination: /etc
+      - source: system/usr   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+        destination: /usr
   - type: justfiles
     validate: false
     include:
