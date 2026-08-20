@@ -13,7 +13,7 @@
 # *user selects "option 3"*
 # echo "$CHOICE" will return "option 3"
 function Choose (){
-    CHOICE=$(ugum choose "$@")
+    CHOICE=$(gum choose "$@")
     echo "$CHOICE"
 }
 
@@ -26,6 +26,6 @@ function Choose (){
 # 0 = Yes
 # 1 = No
 function Confirm (){
-    ugum confirm "$@"
+    gum confirm "$@"
     echo $?
 }
