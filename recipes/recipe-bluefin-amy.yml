@@ -32,7 +32,7 @@ modules:
         - gnome-tweaks
         - https://github.com/RedCommand/flatpak-alias/releases/download/v0.1.4/flatpak-alias_0.1.4_linux_amd64.rpm
         - https://github.com/frostyard/chairlift/releases/download/v0.10.0/frostyard-chairlift-0.10.0-1.x86_64.rpm
-        - https://download1.rstudio.org/electron/rhel9/x86_64/rstudio-2026.09.0-174-x86_64-fedora.tar.gz
+        - https://download1.rstudio.org/electron/rhel9/x86_64/rstudio-2026.09.0-174-x86_64.rpm
         - R
         - mesa-libgbm
         - gtk3
