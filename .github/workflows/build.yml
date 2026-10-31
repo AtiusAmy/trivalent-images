@@ -52,6 +52,7 @@ jobs:
           - recipe-bluefin-nvidia-stable.yml
           - recipe-bluefin-stable.yml
           - recipe-bluefin-amy.yml
+          - recipe-bazzite-amy.yml
           #- recipe-bluefin-lts.yml
           #- recipe-bluefin-gdx.yml
           #- recipe-bluefin-lts-testing.yml

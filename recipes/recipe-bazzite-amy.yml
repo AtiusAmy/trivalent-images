@@ -1,0 +1,46 @@
+name: bazzite-amy
+
+description: "amy of Bluefin"
+
+base-image: ghcr.io/ublue-os/bazzite-gnome
+
+image-version: stable
+
+modules:
+  - from-file: common/trivalent.yml
+
+  - type: dnf
+    repos:
+      cleanup: true
+      files:
+        - https://packages.freedom.press/yum-tools-prod/dangerzone/dangerzone.repo
+      copr:
+        - secureblue/run0edit
+    install:
+      install-weak-deps: false
+      packages:
+        - run0edit
+        - osbuild-selinux
+        - dangerzone
+        - hardinfo2
+        - gparted
+        - gnome-shell-extension-pop-shell
+        - gnome-shell-extension-background-logo
+        - iperf3
+        - vulkan-tools
+        - sysbench
+        - gnome-tweaks
+        - https://github.com/RedCommand/flatpak-alias/releases/download/v0.1.4/flatpak-alias_0.1.4_linux_amd64.rpm
+        - https://github.com/frostyard/chairlift/releases/download/v0.10.0/frostyard-chairlift-0.10.0-1.x86_64.rpm
+  - type: gnome-extensions
+    install:
+      - Quick Settings Audio Devices Renamer # https://extensions.gnome.org/extension/6000/quick-settings-audio-devices-renamer/
+
+    uninstall:
+      - GSConnect # Uninstall step here should be used only for the extensions
+  - type: files
+    files:
+      - source: system/etc   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+        destination: /etc
+      - source: system/usr   # copies `files/system/*` (* means everything inside it) into your image's root folder `/`
+        destination: /usr
