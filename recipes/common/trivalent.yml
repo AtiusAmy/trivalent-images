@@ -12,6 +12,7 @@ modules:
         copr:
           - secureblue/trivalent
       install:
+        skip-unavailable: true
         packages:
           - trivalent
           - trivalent-subresource-filter
